@@ -139,6 +139,11 @@ GEM
       temple (>= 0.8.2)
       thor
       tilt
+    haml-rails (2.1.0)
+      actionpack (>= 5.1)
+      activesupport (>= 5.1)
+      haml (>= 4.0.6)
+      railties (>= 5.1)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.3)
@@ -391,7 +396,7 @@ DEPENDENCIES
   dartsass-sprockets (~> 3.1)
   debug
   font-awesome-rails (~> 4.7)
-  haml (~> 6.3)
+  haml-rails (~> 2.1)
   importmap-rails
   jbuilder
   puma (>= 5.0)

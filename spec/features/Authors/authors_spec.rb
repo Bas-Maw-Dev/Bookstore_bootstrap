@@ -3,7 +3,7 @@ RSpec.describe 'Author' do
   context 'An author exists' do
     before do
       author = Author.create(first_name: 'William', second_name: 'Shakespeare')
-      visit authors_show
+      visit author_path(author)
     end
     it 'displays the authors name' do
       expect(page).to have_text('William Shakespeare')
