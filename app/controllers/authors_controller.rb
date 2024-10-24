@@ -1,6 +1,6 @@
 class AuthorsController < ApplicationController
   def index
-    @authors = Author.all
+    @authors = Author.all.order(:second_name)
   end
   def show
     @author = Author.find(params[:id])
