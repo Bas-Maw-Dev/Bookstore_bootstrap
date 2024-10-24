@@ -23,4 +23,14 @@ RSpec.describe 'Author' do
       expect(page.all('.author').map(&:text)).to eq(['Jane Austen', 'Charles Baudelaire', 'William Shakespeare'])
     end
   end
+
+  context 'A new author is created' do
+    before do
+      visit new_author_path
+    end
+    it 'has a title and form' do
+      expect(page.first('h1')).to have_text('New Author')
+      expect(page).to have_selector('form')
+    end
+  end
 end
