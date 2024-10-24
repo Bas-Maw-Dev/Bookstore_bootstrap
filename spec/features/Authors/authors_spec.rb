@@ -16,9 +16,15 @@ RSpec.describe 'Author' do
       author2 = Author.create(first_name: 'Charles', second_name: 'Baudelaire')
       visit authors_path
     end
+
     it 'displays the authors name' do
       expect(page).to have_text('William Shakespeare')
       expect(page).to have_text('Charles Baudelaire')
+    end
+
+    it 'displays the authors in alphabetical order' do
+      expect(page).to have_selector('.author', count: 2)
+      expect(page.all('.author').map(&:text)).to eq(['Charles Baudelaire', 'William Shakespeare'])
     end
   end
 end
