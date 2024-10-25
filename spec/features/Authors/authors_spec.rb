@@ -31,6 +31,8 @@ RSpec.describe 'Author' do
     it 'has a title and form' do
       expect(page.first('h1')).to have_text('New Author')
       expect(page).to have_selector('form')
+      expect(page).to have_css('#author_first_name')
+      expect(page).to have_css('#author_second_name')
     end
   end
 end
