@@ -58,7 +58,7 @@ end
 
 gem "bootstrap", "~> 5.3"
 gem "dartsass-sprockets", "~> 3.1"
-gem "rspec-rails", "~> 7.0"
+gem "rspec-rails", "~> 7.1"
 
 gem "font-awesome-rails", "~> 4.7"
 
