@@ -57,7 +57,7 @@ group :test do
 end
 
 gem "bootstrap", "~> 5.3"
-gem "dartsass-sprockets", "~> 3.1"
+gem "dartsass-sprockets", "~> 3.2"
 gem "rspec-rails", "~> 7.0"
 
 gem "font-awesome-rails", "~> 4.7"
